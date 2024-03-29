@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+/*style to make hover effects smooth*/
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+/*set the properties of the button containers*/
+.buttons {
+  display: table;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.hover-container {
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*button style*/
+.hover-btn {
+  color:#17345e;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  width: 100%;
+  display: inline-block;
+  margin-right: auto;
+  margin-left:auto;
+  letter-spacing: 0;
+}
+
+/*button hover style*/
+.hover-btn:hover,
+.hover-btn:focus {
+    color: #17345e;
+    text-decoration: none;
+}
+
+.hover-btn:hover,
+.hover-btn:active {
+  letter-spacing: 5px;
+}
+
+.hover-btn:hover,
+.hover-btn:active {
+  letter-spacing: 5px;
+}
+
+.hover-btn:after,
+.hover-btn:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0%;
+}
+
+.hover-btn:hover:after,
+.hover-btn:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #17345e;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.hover-btn:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- title -->
+  <title>Account Email | inov8.cc</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="../assets/css/brutal.css" />
+</head>
+<body>
+<nav class="menu site-nav"><a class="site-title" href="../index.html">inov8.cc</a>
+    <div class="main-nav">
+        <ul>
+            <li>Emails:</li>| 
+            <li><a href="./success-email.html">Success</a></li>
+            <li><a href="./account-email.html">Account</a></li>
+            <li><a href="./reminder-email.html">Reminder</a></li>
+            <li><a href="./feedback-email.html">Feedback</a></li>
+            <li><a href="./appt-soon-email.html">Appt Soon</a></li>
+            <li><a href="./cancel-email.html">Cancel</a></li>            
+        </ul>
+    </div>
+</nav>
+<hr />
+
+<table align="center" width="100%" style="background-color:#ff5d00;">
+    <tr>
+        <td align="center">
+            <img src="https://s3.amazonaws.com/vetterpc-images/_email/email-logo.png" width="600" style="display:block;width:100%;max-width:600px">
+        </td>
+    </tr>
+</table>
+<table align="center">
+    <tr>
+        <td>
+            <strong style="color:#17345e; font-size:42px; font-family:arial,helvetica neue,helvetica,sans-serif">Account Created!</strong>
+        </td>
+    </tr>     
+</table>
+<p style="margin: 0px;">&nbsp;</p>
+<table style="font-family:arial,helvetica neue,helvetica,sans-serif">
+    <tr>
+        <td>
+            <strong style="color: #17345E;font-size: 20px;margin: 0;font-family:arial,helvetica neue,helvetica,sans-serif;">Welcome to Vetter, {{customerFirstName}}! You've successfully created your account.</strong>
+        </td>
+    </tr>
+</table>
+<p style="margin: 0px;">&nbsp;</p>
+<table width="100%">
+    <tr>
+        <td style="border-top: 1px solid #ccc;height: 1pt;">&nbsp;</td>
+    </tr>
+</table>
+<table style="font-family:arial,helvetica neue,helvetica,sans-serif">   
+    <tr>
+        <td>
+            <strong style="color: #696969;font-size: 20px;font-family:arial,helvetica neue,helvetica,sans-serif;">Account Details</strong>
+        </td>
+    </tr>
+</table>
+<table width="550" cellpadding="5" cellspacing="10" style="font-family:arial,helvetica neue,helvetica,sans-serif;display:block;width:100%;max-width:550px">
+    <tr>
+        <td align="center" width="30%">
+            <img height="40" src="https://s3.amazonaws.com/vetterpc-images/_email/person-icon.png" style="border:0px;width:40px;height:40px;margin:0px" width="40">
+        </td>
+        <td align="center" style="color:#17345e;font-size: 18px;">
+            <p style="margin: 0;font-family:arial,helvetica neue,helvetica,sans-serif;"><strong>Name:</strong> {{customerFirstName}} {{customerLastName}}</p>            
+            <p style="margin: 0;font-family:arial,helvetica neue,helvetica,sans-serif;"><strong>Customer ID #:</strong> {{customerIdNumber}}</p>
+        </td>        
+    </tr>
+</table>
+<table width="100%">
+    <tr>
+        <td style="border-top: 1px solid #ccc;height: 1pt;">&nbsp;</td>
+    </tr>
+</table>
+<table style="font-family:arial,helvetica neue,helvetica,sans-serif">   
+    <tr>
+        <td>
+            <strong style="color: #696969;font-size: 20px;font-family:arial,helvetica neue,helvetica,sans-serif;">Useful Member Information</strong>
+        </td>
+    </tr>
+	<tr> 
+        <td height="5"></td> 
+    </tr>       
+</table>
+<table>
+    <tr>
+        <td style="font-family:arial,helvetica neue,helvetica,sans-serif;">Keep your pet healthy and stay up to date on vaccinations. Bring a vet to your pet — <a href="{{siteUrl('schedule')}}">book an appointment</a> now!</td>
+    </tr>
+    <tr> 
+        <td height="20"></td> 
+    </tr>  
+    <tr>
+        <td style="font-family:arial,helvetica neue,helvetica,sans-serif;">Want to learn more <a href="{{siteUrl('about')}}">about</a> Vetter?</td>
+    </tr>
+    <tr> 
+        <td height="20"></td> 
+    </tr>          
+    <tr>
+        <td style="font-family:arial,helvetica neue,helvetica,sans-serif;">Manage your account by logging in.</td>
+    </tr>        
+</table>
+<p style="margin: 0px;">&nbsp;</p> 
+<table align="center" width="100" style="border-collapse: separate!important;border-radius: 4px;background-color: #17345e;">
+    <tr>
+        <td align="center" style="font-family:Arial;font-size:24px;padding:15px 0px">
+            <a title="Login" href="{{siteUrl('user')}}/{{userid}}" target="_blank" style="font-weight:bold;letter-spacing:normal;line-height:100%;text-align:center;text-decoration:none;color:#ffffff;padding:15px 15px">Login</a>
+        </td>
+    </tr>
+</table>
+<p style="margin: 0px;">&nbsp;</p>
+<table>
+    <tr>
+        <td style="font-family:arial,helvetica neue,helvetica,sans-serif;">
+            Email <a href="mailto: general@vetterpetcare.com">general@vetterpetcare.com</a> with questions. Please note, this email address is unmonitored.
+        </td>
+    </tr>
+</table>
+<p style="margin: 0px;">&nbsp;</p>
+<table width="100%">
+    <tr>
+        <td style="border-top: 1px solid #ccc;height: 1pt;">&nbsp;</td>
+    </tr>
+</table>
+<table align="center" width="125">
+    <tr>
+        <td>
+            <a href="{{facebook}}" target="_blank">
+                <img src="https://s3.amazonaws.com/vetterpc-images/_email/email-facebook.png" alt="Facebook" width="48" style="width:48px;max-width:48px;display:block">
+            </a>
+        </td>
+        <td>
+            <a href="{{instagram}}" target="_blank">
+                <img src="https://s3.amazonaws.com/vetterpc-images/_email/email-instagram.png" alt="Instagram" width="48" style="width:48px;max-width:48px;display:block">
+            </a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

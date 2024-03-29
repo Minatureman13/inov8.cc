@@ -1,0 +1,187 @@
+/*Universal*/
+/*for full page image*/
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Georgia", serif;
+  color: #222;
+  font-size: 20px;
+  position: relative;
+}
+
+.main-article {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 3em;
+  text-transform: capitalize;
+  color: #444;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 2em;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 2em;
+}
+
+p, li {
+  line-height: 1.5em;
+}
+
+.lead {
+  font-style: italic;
+  font-size: 1.25em;
+  color: #888;
+  line-height: 1.3em;
+  margin: 1.5em 0;
+}
+
+.byline {
+  font-size: 0.7em;
+  margin-bottom: 4em;
+  font-family: "Trebuchet MS", Trebuchet MS, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+.byline a {
+  color: #999;
+}
+.byline a:hover {
+  color: #777;
+}
+
+.section-heading {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  margin: 30px 0;
+}
+.menu{
+  color: #444;
+  width: 100%;
+}
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 1em;
+  background-color: #f9f9f9;
+}
+.menu .site-title {
+  margin: 0;
+  font-size: 1.5em;
+}
+.site-nav li:first-child {
+  text-transform: uppercase;
+}
+.menu a {
+  color: #444;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: #777;
+}
+
+@media screen and (min-width: 475px) {
+  .site-title {
+    margin: 0;
+    font-size: 2.5em;
+    padding-left: 20px;
+  }
+}
+.main-nav {
+  font-size: 0.7em;
+}
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.main-nav ul li {
+  margin: 0 7px;
+}
+.main-nav ul li:first-child {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 475px) {
+  .main-nav {
+    font-size: 1em;
+    padding: 0 20px;
+  }
+  .main-nav ul li {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .main-article h1 {
+    font-size: 2em;
+  }
+  .main-article h2 {
+    font-size: 1.2em;
+  }
+}
+footer {
+  text-align: right;
+}
+
+footer p{
+  padding-right: 20px;
+}
+/*End Universal*/
+
+/*Documents*/
+.article-list-item{
+  margin-top: 1.5em;
+}
+.article-list-item a {
+  color: #444;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.article-list-item a:hover {
+  text-decoration: underline;
+}
+.article-list-item p{
+  margin: 0 0;
+}
+
+.article-list-item .lead {
+  font-size: 1em;
+}
+/*End Documents*/
+
+/*Article*/
+.byline-date{
+  color: #999;  
+}
+
+.main-article img{
+  max-width: 100%;
+}
+/*End Article*/
+
+.bg{
+  /* The image used */
+  background-image: url("../img/tiger-2019-masters.jpeg");
+
+  /* Full height */
+  height: 70%; 
+
+  /* Center and scale the image nicely */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

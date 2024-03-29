@@ -1,0 +1,104 @@
+/*used to center div for presentation*/
+.wrap {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*******SVG STYLE********/
+.map_svg {
+    display: block;
+    margin: 0 auto;
+    max-height: 800px;
+    height: auto;
+}
+
+.philly_width{
+    width: 100%;
+}
+.baltimore_width{
+    width: 54.38%;
+}
+
+.map_svg a:focus {
+    outline: none;
+}
+
+.map_svg a polygon,
+.map_svg a polyline,
+.map_svg a path {
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+
+}
+
+.map_svg .zone{
+    fill: #17345e;
+    opacity: 0.25;
+}
+
+.map_svg a:hover,
+.map_svg a:focus {
+    cursor: pointer;
+}
+
+.map_svg a:hover polygon,
+.map_svg a:hover path,
+.map_svg a:hover polyline,
+.map_svg a:focus polygon,
+.map_svg a:focus path,
+.map_svg a:focus polyline {
+    opacity: .8;
+}
+
+.map_svg a:hover polygon.zone2,
+.map_svg a:hover path.zone2,
+.map_svg a:hover polyline.zone2,
+.map_svg a:focus polygon.zone2,
+.map_svg a:focus path.zone2,
+.map_svg a:focus polyline.zone2 {
+    fill-opacity: .5;
+}
+
+.map_svg a.disabled-zone polygon,
+.map_svg a.disabled-zone polyline,
+.map_svg a.disabled-zone path{
+    fill:grey;
+    opacity: 0.15;
+}
+
+.map_svg a.disabled-zone:hover polygon,
+.map_svg a.disabled-zone:hover path,
+.map_svg a.disabled-zone:hover polyline,
+.map_svg a.disabled-zone:focus polygon,
+.map_svg a.disabled-zone:focus path,
+.map_svg a.disabled-zone:focus polyline {
+    opacity: .25;
+
+}
+/********END SVG STYLE*******/
+
+
+/********POPUP STYLE*********/
+/*to disable a zone, add disabled-popup class to the popups "a" link*/
+.disabled-popup{
+    pointer-events: none;
+    cursor: default;
+    color: grey;
+}
+/*style to center the link text within the popup*/
+.centered-link{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+/********END POPUP STYLE*********/

@@ -1,0 +1,117 @@
+/* Nav */
+body{
+	margin: 8px;
+}
+.site-nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+background-color: #f9f9f9;
+width: 100%;
+margin-top: 0;
+margin-bottom: 10px;
+color: #444;
+font-family: "Georgia", serif;
+font-size: 20px;
+position: relative;
+}
+.site-nav .site-title {
+margin: 0;
+font-size: 1.5em;
+}
+.site-nav li:first-child {
+text-transform: uppercase;
+}
+.site-nav a {
+color: #444;
+text-decoration: none;
+}
+.site-nav a:hover {
+color: #777;
+}
+
+@media screen and (min-width: 475px) {
+	.site-title {
+		margin: 0;
+		font-size: 2.5em;
+		padding-left: 20px;
+	}
+}
+.main-nav {
+font-size: 0.7em;
+}
+.main-nav ul {
+list-style: none;
+padding: 0;
+display: flex;
+margin: 20px 0;
+}
+.main-nav ul li {
+margin: 0 7px;
+}
+.main-nav ul li:first-child {
+margin-left: 0;
+}
+
+@media screen and (min-width: 475px) {
+	.main-nav {
+		font-size: 1em;
+		padding: 0 20px;
+	}
+	.main-nav ul li {
+		margin: 0 10px;
+	}
+}
+/* End Nav */
+
+/* Pickem */
+.pick{
+	color: blue;
+	font-weight: bold;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.table>tbody>tr>td>h4>a{
+	color: #333;
+	text-decoration: none;
+}
+
+.relative-container {
+  position: relative;
+  text-align: center;
+  line-height: 10px;
+}
+
+.top-left {
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  display: none;
+}
+
+.dk-icon {
+	width: 15px;
+	margin: 0px 2px 2px 2px;
+}
+
+@media screen and (min-width: 768px) {
+	.top-left {
+		display: inherit;
+	  }
+}
+
+.hidden-xs {
+    display: inline-block !important;
+}
+
+@media (max-width: 767px) {
+.hidden-xs {
+  display: none!important;
+ }
+}
+/* End Pickem */
